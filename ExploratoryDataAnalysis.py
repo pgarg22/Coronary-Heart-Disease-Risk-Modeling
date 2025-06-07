@@ -2,7 +2,7 @@
 """
 Created on Wed Mar  3 13:33:49 2021
 
-@author:  pranjalgarg, piotrsaffrani, aviraj
+@author:  pranjalgarg, piotrsaffrani
 """
 import pandas as pd
 import numpy as np
@@ -12,13 +12,14 @@ import scipy.linalg as linalg
 from scipy.linalg import svd
 import statistics
 from scipy import stats
-import seaborn as sns
+import seaborn as snsco
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 
 data = pd.read_csv("CHD.csv")
+data2=pd.read_csv("CHD.csv")
 
 #Fix data by: replacing family history values with binary int and delete useless row
 data.famhist = data.famhist.str.replace('Present','1') 
@@ -103,7 +104,7 @@ plt.xticks(range(1,10),attributeNames)
 #Correlation heat map
 correlation_mat = data.corr()
 plt.figure()
-sns.heatmap(correlation_mat, annot = True, square=True,annot_kws={'fontsize':6})
+sns.heatmap(correlation_mat, annot = True)
 corr_pairs = correlation_mat.unstack()
 
 
