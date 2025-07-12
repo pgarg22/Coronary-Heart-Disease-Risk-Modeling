@@ -24,6 +24,13 @@ Trains and compares several machine learning models for predicting outcomes from
 ### 3. `CHD.csv`
 The dataset used for analysis and modeling. Contains medical and demographic variables related to coronary heart disease.
 
+### 4. `Report-ExploratoryDataAnalysis.pdf`
+This report corresponds to the initial phase of the project focused on exploratory data analysis (EDA), as implemented in ExploratoryDataAnalysis.py. The report covers a thorough investigation of a selected dataset, including data description, attribute characterization, missing value analysis, visualization (e.g., histograms, correlation plots, PCA), and an assessment of the dataset's suitability for future supervised learning tasks. It reflects the feature extraction and visualization and lays the foundation for the subsequent modeling phase.
+
+### 4. `Report-ClassificationAndRegressionModels.pdf`
+This report documents the supervised learning phase of the project based on ClassificationAndRegressionModels.py. It involves the development, evaluation, and comparison of classification and regression models (including regularized linear regression, logistic regression, artificial neural networks, and baselines) using two-level cross-validation. The report includes statistical analysis of model performance and aims to determine the most effective predictive methods for the dataset, when using Supervised learning: Classification and regression.
+
+
 ## 🧠 Key Concepts
 - Principal Component Analysis (PCA)
 - Supervised learning (regression and classification)
